@@ -1,4 +1,55 @@
 {
+  "ptsgi_test": {
+    "file_name": "ptsgi/json/GCP+PA-年報(0110-2)_TO TR.json"
+  },
+  "ptsgi_om": {
+    "file_name": "ptsgi/json/TM-SUZUKI OM-總TM(2020).json"
+  },
+  "ptsgi_om_train": {
+    "file_name": "ptsgi/json/TM-SUZUKI OM-總TM(2020)_train_90.json"
+  },
+  "ptsgi_om_test": {
+    "file_name": "ptsgi/json/TM-SUZUKI OM-總TM(2020)_test_10.json"
+  },
+  "ptsgi_om_cat_train": {
+    "file_name": "ptsgi/json/TM-SUZUKI OM-總TM(2020)_cat_train_90.json"
+  },
+  "ptsgi_om_cat_test": {
+    "file_name": "ptsgi/json/TM-SUZUKI OM-總TM(2020)_cat_test_10.json"
+  },
+  "ptsgi_rm": {
+    "file_name": "ptsgi/json/TM-SUZUKI RM-2020.json"
+  },
+  "ptsgi_rm_train": {
+    "file_name": "ptsgi/json/TM-SUZUKI RM-2020_train_90.json"
+  },
+  "ptsgi_rm_test": {
+    "file_name": "ptsgi/json/TM-SUZUKI RM-2020_test_10.json"
+  },
+  "ptsgi_rm_cat_train": {
+    "file_name": "ptsgi/json/TM-SUZUKI RM-2020_cat_train_90.json"
+  },
+  "ptsgi_rm_cat_test": {
+    "file_name": "ptsgi/json/TM-SUZUKI RM-2020_cat_test_10.json"
+  },
+  "ptsgi_law_train": {
+    "file_name": "ptsgi/json/繁中翻英法律1.2N_train_90.json"
+  },
+  "ptsgi_law_test": {
+    "file_name": "ptsgi/json/繁中翻英法律1.2N_test_10.json"
+  },
+  "ptsgi_law_cat_train": {
+    "file_name": "ptsgi/json/繁中翻英法律1.2N_cat_train_90.json"
+  },
+  "ptsgi_law_cat_test": {
+    "file_name": "ptsgi/json/繁中翻英法律1.2N_cat_test_10.json"
+  },
+  "ptsgi_fr_cat_train": {
+    "file_name": "ptsgi/json/FR第3.0模型--新+舊訓練+測試+驗證集_final_cat_train_90.json"
+  },
+  "ptsgi_fr_cat_test": {
+    "file_name": "ptsgi/json/FR第3.0模型--新+舊訓練+測試+驗證集_final_cat_test_10.json"
+  },
   "identity": {
     "file_name": "identity.json"
   },
@@ -38,24 +89,9 @@
       "assistant_tag": "assistant"
     }
   },
-  "mllm_video_demo": {
-    "file_name": "mllm_video_demo.json",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "messages",
-      "videos": "videos"
-    },
-    "tags": {
-      "role_tag": "role",
-      "content_tag": "content",
-      "user_tag": "user",
-      "assistant_tag": "assistant"
-    }
-  },
   "alpaca_en": {
     "hf_hub_url": "llamafactory/alpaca_en",
-    "ms_hub_url": "llamafactory/alpaca_en",
-    "om_hub_url": "HaM/alpaca_en"
+    "ms_hub_url": "llamafactory/alpaca_en"
   },
   "alpaca_zh": {
     "hf_hub_url": "llamafactory/alpaca_zh",
@@ -67,8 +103,7 @@
   },
   "alpaca_gpt4_zh": {
     "hf_hub_url": "llamafactory/alpaca_gpt4_zh",
-    "ms_hub_url": "llamafactory/alpaca_gpt4_zh",
-    "om_hub_url": "State_Cloud/alpaca-gpt4-data-zh"
+    "ms_hub_url": "llamafactory/alpaca_gpt4_zh"
   },
   "glaive_toolcall_en": {
     "hf_hub_url": "llamafactory/glaive_toolcall_en",
@@ -282,13 +317,6 @@
     "hf_hub_url": "Magpie-Align/Magpie-Pro-300K-Filtered",
     "formatting": "sharegpt"
   },
-  "magpie_ultra": {
-    "hf_hub_url": "argilla/magpie-ultra-v0.1",
-    "columns": {
-      "prompt": "instruction",
-      "response": "response"
-    }
-  },
   "web_instruct": {
     "hf_hub_url": "TIGER-Lab/WebInstructSub",
     "columns": {
@@ -354,14 +382,6 @@
       "content_tag": "content",
       "user_tag": "user",
       "assistant_tag": "assistant"
-    }
-  },
-  "pokemon_cap": {
-    "hf_hub_url": "llamafactory/pokemon-gpt4o-captions",
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "images": "images"
     }
   },
   "mllm_pt_demo": {
@@ -455,28 +475,6 @@
       "prompt": "instruction",
       "chosen": "chosen",
       "rejected": "rejected"
-    }
-  },
-  "rlhf_v": {
-    "hf_hub_url": "llamafactory/RLHF-V",
-    "ranking": true,
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "chosen": "chosen",
-      "rejected": "rejected",
-      "images": "images"
-    }
-  },
-  "vlfeedback": {
-    "hf_hub_url": "Zhihui/VLFeedback",
-    "ranking": true,
-    "formatting": "sharegpt",
-    "columns": {
-      "messages": "conversations",
-      "chosen": "chosen",
-      "rejected": "rejected",
-      "images": "images"
     }
   },
   "orca_pairs": {

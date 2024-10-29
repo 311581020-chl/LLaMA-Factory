@@ -1,22 +1,27 @@
 ### model
-model_name_or_path: meta-llama/Meta-Llama-3-8B-Instruct
-adapter_name_or_path: saves/llama3-8b/lora/sft
+# model_name_or_path: meta-llama/Meta-Llama-3.1-70B-Instruct
+model_name_or_path: models/llama3.1-70b_lora_sft/102302_law_train
+# adapter_name_or_path: saves/llama3-8b/lora/sft
 
 ### method
 stage: sft
 do_predict: true
 finetuning_type: lora
+deepspeed: examples/deepspeed/ds_z0_config.json
+# deepspeed: examples/deepspeed/ds_z2_config_mod.json
 
 ### dataset
-eval_dataset: identity,alpaca_en_demo
+# eval_dataset: identity,alpaca_en_demo
+eval_dataset: ptsgi_law_test
 template: llama3
 cutoff_len: 1024
-max_samples: 50
+# max_samples: 50
 overwrite_cache: true
 preprocessing_num_workers: 16
 
 ### output
-output_dir: saves/llama3-8b/lora/predict
+output_dir: saves/llama3.1-70b/lora/predict/102401_law_train_law_test
+# output_dir: saves/llama3-8b/lora/predict
 overwrite_output_dir: true
 
 ### eval
